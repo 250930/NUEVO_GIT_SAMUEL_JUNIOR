@@ -35,3 +35,5 @@ def factorial(n):
         resultado *= i
     
     return resultado
+
+def mcd(a, b):
