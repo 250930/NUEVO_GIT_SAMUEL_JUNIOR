@@ -25,3 +25,7 @@ def es_primo(numero):
             return False
     
     return True
+
+def factorial(n):
+    if n < 0:
+        return "No existe factorial para números negativos"
