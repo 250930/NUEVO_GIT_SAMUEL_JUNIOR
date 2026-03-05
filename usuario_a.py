@@ -11,3 +11,10 @@ def fibonacci(n):
         a, b = b, a + b
 
     print("Serie Fibonacci:", " ".join(map(str, serie)))
+
+def es_capicua(numero):
+    numero_str = str(numero)
+    if numero_str == numero_str[::-1]:
+        return True
+    else:
+        return False
