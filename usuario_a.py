@@ -12,6 +12,18 @@ def fibonacci(n):
 
     print("Serie Fibonacci:", " ".join(map(str, serie)))
 
-def es_capicua(numero):
-    numero_str = str(numero)
-    return numero_str == numero_str[::-1]
+def capicua(numero):
+    try:
+        numero = int(numero)
+        numero_str = str(numero)
+
+        if numero_str == numero_str[::-1]:
+            print("El número es capicúa")
+            return True
+        else:
+            print("El número no es capicúa")
+            return False
+
+    except ValueError:
+        print("Error: debes ingresar un número válido")
+        return False
