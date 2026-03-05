@@ -11,3 +11,19 @@ def fibonacci(n):
         a, b = b, a + b
 
     print("Serie Fibonacci:", " ".join(map(str, serie)))
+
+def capicua(numero):
+    try:
+        numero = int(numero)
+        numero_str = str(numero)
+
+        if numero_str == numero_str[::-1]:
+            print("El número es capicúa")
+            return True
+        else:
+            print("El número no es capicúa")
+            return False
+
+    except ValueError:
+        print("Error: debes ingresar un número válido")
+        return False
