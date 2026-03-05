@@ -15,3 +15,13 @@ def primos_en_rango(inicio, fin):
         
         if es_primo:
             print(numero, end=" ")
+
+def es_primo(numero):
+    if numero < 2:
+        return False
+    
+    for i in range(2, int(numero ** 0.5) + 1):
+        if numero % i == 0:
+            return False
+    
+    return True
