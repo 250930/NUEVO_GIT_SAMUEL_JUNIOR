@@ -1,18 +1,13 @@
 def fibonacci(n):
-    
     if n <= 0:
-        print("Ingrese un número mayor que 0")
+        print("Error: el número debe ser mayor que 0")
         return
 
-    a = 0
-    b = 1
-    contador = 0
+    a, b = 0, 1
+    serie = []
 
-    print("Serie Fibonacci:")
+    for _ in range(n):
+        serie.append(a)
+        a, b = b, a + b
 
-    while contador < n:
-        print(a, end=" ")
-        siguiente = a + b
-        a = b
-        b = siguiente
-        contador += 1
+    print("Serie Fibonacci:", " ".join(map(str, serie)))
