@@ -1,0 +1,6 @@
+## CALCULADORA AUTOMATICA
+
+# DESARROLLADORES 
+
+- Jaime Naranjo
+- Samuel Lesmes 
