@@ -29,10 +29,26 @@ def capicua(numero):
         return False
 
 def numero_perfecto(numero):
-    suma = 0
+    try:
+        numero = int(numero)
 
-    for i in range(1, numero):
-        if numero % i == 0:
-            suma += i
+        if numero <= 0:
+            print("El número debe ser positivo")
+            return False
 
-    return suma == numero
+        suma = 0
+
+        for i in range(1, numero):
+            if numero % i == 0:
+                suma += i
+
+        if suma == numero:
+            print("El número es perfecto")
+            return True
+        else:
+            print("El número no es perfecto")
+            return False
+
+    except ValueError:
+        print("Error: ingresa un número válido")
+        return False
