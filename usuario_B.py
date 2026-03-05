@@ -23,3 +23,5 @@ def es_primo(numero):
     for i in range(2, int(numero ** 0.5) + 1):
         if numero % i == 0:
             return False
+    
+    return True
