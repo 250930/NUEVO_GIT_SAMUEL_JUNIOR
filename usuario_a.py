@@ -35,7 +35,4 @@ def numero_perfecto(numero):
         if numero % i == 0:
             suma += i
 
-    if suma == numero:
-        return True
-    else:
-        return False
+    return suma == numero
