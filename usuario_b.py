@@ -18,25 +18,29 @@ def primos_en_rango(inicio, fin):
 
 def es_primo(numero):
     if numero < 2:
-        return False
+        print("No es primo")
+        return
     
     for i in range(2, int(numero ** 0.5) + 1):
         if numero % i == 0:
-            return False
+            print("No es primo")
+            return
+        print("Es primo")
     
     return True
 
 def factorial(n):
     if n < 0:
-        return "No existe factorial para números negativos"
+        print("No existe factorial para números negativos")
+        return 
     
     resultado = 1
     for i in range(1, n + 1):
         resultado *= i
-    
-    return resultado
+        print(resultado)
+    return
 
 def mcd(a, b):
     while b != 0:
         a, b = b, a % b
-    return abs(a)
+    return a
